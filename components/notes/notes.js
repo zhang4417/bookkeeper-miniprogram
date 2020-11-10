@@ -1,0 +1,5 @@
+Component({
+  data:{},
+  lifetimes:{},
+  methods:{}
+})

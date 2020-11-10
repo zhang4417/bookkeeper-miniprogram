@@ -1,0 +1,29 @@
+/* components/tagList/tagList.wxss */
+
+.wrapper{
+  margin:0 16rpx;
+  display: flex;
+  flex-direction: column;
+}
+.tags{
+  display: flex;
+  flex-direction: row;
+
+}
+.tag-item{
+  padding:3rpx 48rpx;
+  margin-right:16rpx;
+  margin-bottom:16rpx;
+  border-radius:16rpx;
+  background-color:#eee;
+}
+
+.btn{
+  display: inline-block;
+  left:0;
+  border:none;
+  outline: none;
+  font-size: inherit;
+  padding:3rpx 16rpx;
+  margin:0;
+}

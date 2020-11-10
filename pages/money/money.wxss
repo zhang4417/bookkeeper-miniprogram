@@ -1,0 +1,10 @@
+/* pages/home/home.wxss */
+.press{
+  background:red;
+}
+.nav{
+  color:red
+}
+.demo{
+  border:1px solid red;
+}

@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/money/money",
+    "pages/tags/tags", 
+    "pages/statistics/statistics"
+  ],
+  "tabBar":{
+    "color": "#7A7E83",
+    "selectedColor": "#ff6600",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/tags/tags",
+        "iconPath": "/images/tab/tags.png",
+        "selectedIconPath": "/images/tab/selected-tags.png",
+        "text": "标签"
+      },
+      {
+        "pagePath": "pages/money/money",
+        "iconPath": "/images/tab/money.png",
+        "selectedIconPath": "/images/tab/selected-money.png",
+        "text": "记账"
+      },
+      {
+        "pagePath": "pages/statistics/statistics",
+        "iconPath": "/images/tab/statistics.png",
+        "selectedIconPath": "/images/tab/selected-statistics.png",
+        "text": "统计"
+      }
+    ]
+  },
+
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f60",
+    "navigationBarTitleText": "记账猫",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

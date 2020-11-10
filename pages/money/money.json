@@ -1,0 +1,7 @@
+{
+  "usingComponents":{
+    "tag-list":"/components/tagList/tagList",
+    "notes":"/components/notes/notes",
+    "number-pad":"/components/numberPad/nmberPad"
+  }
+}

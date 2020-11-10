@@ -1,0 +1,17 @@
+/* components/notes/notes.wxss */
+.note{
+  display:flex;
+  border:1px solid #eee;
+  margin:0 16rpx;
+  align-items: center;
+}
+.note>text{
+  padding:3rpx 8rpx;
+  color:#ccc;
+  line-height: 100%;
+}
+.note>view{
+  border-right:1px solid #ddd;
+  height:16px;
+  margin-right:8rpx;
+}

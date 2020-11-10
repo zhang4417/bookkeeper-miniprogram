@@ -1,0 +1,11 @@
+<!--components/tagList/tagList.wxml-->
+<view class="wrapper">
+  <view class="tags">
+    <block wx:for="{{tags}}" wx:key="index" wx:for-item="item">
+      <view class="tag-item">{{item}}</view>
+    </block>
+  </view>
+  <view class="btn-wrapper">
+    <button class="btn">新增标签</button>
+  </view>
+</view>

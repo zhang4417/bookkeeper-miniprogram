@@ -2,6 +2,9 @@ Component({
   data:{
     output:"0"
   },
+  properties:{
+    record:Object,
+  },
   lifetimes:{},
   methods:{
     onNumberPad(e){
@@ -28,7 +31,8 @@ Component({
         this.setData({output:"0"})
       }
       if(text==="OK"){
-        console.log(Number.parseFloat(output))
+        const x=Number.parseFloat(output)
+        console.log({...this.properties.record,amount:x})
       }
     }
   }

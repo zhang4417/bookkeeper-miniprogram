@@ -6,6 +6,7 @@ Component({
   methods:{
     onNoteChange(e){
       this.setData({notes:e.detail.value})
+      this.triggerEvent("myEvent",e.detail.value)
     }
   }
 })

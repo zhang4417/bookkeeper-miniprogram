@@ -1,6 +1,24 @@
-
 Page({
   data:{
-    tags:["衣","食","住","行"]
+    tags:["衣","食","住","行"],
+    record:{notes:'',amount:0,tag:""}
+  },
+  methods:{
+
+  },
+  onLoad(){
+    this.setData({record:{...this.data.record,tag:this.data.tags[0]}})
+  },
+  onGetNotes:function(e){
+    this.setData({record:{...this.data.record,notes:e.detail}})
+    console.log(this.data.record)
+  },
+  onGetOutput:function(e){
+    this.setData({record:{...this.data.record,amount:e.detail}})
+    console.log(this.data.record)
+  },
+  onGetTag:function(e){
+    this.setData({record:{...this.data.record,tag:e.detail}})
+    console.log(this.data.record)
   }
 })

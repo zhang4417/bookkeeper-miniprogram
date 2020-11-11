@@ -1,7 +1,7 @@
 
 <view class="wrapper">
-  <number-pad></number-pad>
-  <notes></notes>
-  <tag-list tags="{{tags}}" />
+  <number-pad record="{{record}}"/>
+  <notes bind:myEvent="onGetNotes" />
+  <tag-list tags="{{tags}}" bind:myEvent="onGetTag"/>
 </view>
 

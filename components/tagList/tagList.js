@@ -20,22 +20,19 @@ Component({
     }
   },
   created(){
-    console.log('created')
   },
   attached:function(){
-    console.log('attached')
     this.setData({selectedTag:this.properties.tags[0]})
   },
-  ready(){
-    console.log('ready')
+  ready(){ 
   },
-
   observers:{
   },
   methods:{
     onSelected(e){
       const detail=e.target.dataset
       this.setData({selectedTag:detail.tag})
+      this.triggerEvent("myEvent",this.data.selectedTag)
     }
   }
 })

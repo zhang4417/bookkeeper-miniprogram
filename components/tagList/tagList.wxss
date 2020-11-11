@@ -14,7 +14,7 @@
   padding:3rpx 48rpx;
   margin-right:16rpx;
   margin-bottom:16rpx;
-  border-radius:16rpx;
+  border-radius:32rpx;
   background-color:#eee;
 }
 
@@ -34,4 +34,5 @@
 
 .selected{
   background:#f60;
+  color:white;
 }

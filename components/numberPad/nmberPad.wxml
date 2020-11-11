@@ -1,20 +1,20 @@
 <!--components/numberPad/nmberPad.wxml-->
 <view class="numberPad">
     <view class="output">{{output}}</view>
-    <view class="buttons">
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>删除</button>
-      <button>4</button>
-      <button>5</button>
-      <button>6</button>
-      <button>清空</button>
-      <button>7</button>
-      <button>8</button>
-      <button>9</button>
-      <button class="ok">OK</button>
-      <button class="zero">0</button>
-      <button>.</button>
+    <view class="buttons" bindtap="onNumberPad">
+      <button data-text="1">1</button>
+      <button data-text="2">2</button>
+      <button data-text="3">3</button>
+      <button data-text="删除">删除</button>
+      <button data-text="4">4</button>
+      <button data-text="5">5</button>
+      <button data-text="6">6</button>
+      <button data-text="清空">清空</button>
+      <button data-text="7">7</button>
+      <button data-text="8">8</button>
+      <button data-text="9">9</button>
+      <button class="ok" data-text="OK">OK</button>
+      <button class="zero" data-text="0">0</button>
+      <button data-text=".">.</button>
     </view>
   </view>

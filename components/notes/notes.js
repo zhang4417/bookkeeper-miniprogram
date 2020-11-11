@@ -1,5 +1,11 @@
 Component({
-  data:{},
+  data:{
+    notes:''
+  },
   lifetimes:{},
-  methods:{}
+  methods:{
+    onNoteChange(e){
+      this.setData({notes:e.detail.value})
+    }
+  }
 })

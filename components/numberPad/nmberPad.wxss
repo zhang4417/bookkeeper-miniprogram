@@ -3,6 +3,8 @@
 .output{
   height:92rpx;
   background:#f60;
+  font-size:48rpx;
+  color:white;
   box-shadow:0 3px 3px rgba(252, 139, 63, 0.5);
   margin:8rpx 16rpx;
   border-radius:8rpx;

@@ -1,1 +1,30 @@
 /* components/numberPad/nmberPad.wxss */
+
+.output{
+  height:92rpx;
+  background:#f60;
+  box-shadow:0 3px 3px rgba(252, 139, 63, 0.5);
+  margin:8rpx 16rpx;
+  border-radius:8rpx;
+  line-height:92rpx;
+  text-align:right;
+  padding:8rpx;
+}
+.buttons::after{
+  clear:both;
+  content:"";
+  display:block;
+}
+.buttons>button{
+  height:46px;
+  width:25%;
+  float:left;
+}
+button.ok{
+  float:right;
+  height:92px;
+  line-height:92px;
+}
+button.zero{
+  width:50%;
+}

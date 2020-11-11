@@ -1,5 +1,4 @@
 <!--components/notes/notes.wxml-->
-<view>
+<view class="wrapper">
   <label class="note"><text>备注</text><view></view><input type="text" placeholder="请在此输入备注。" /></label>
-  
 </view>

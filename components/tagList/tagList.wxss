@@ -1,14 +1,14 @@
 /* components/tagList/tagList.wxss */
 
 .wrapper{
-  margin:0 16rpx;
+  margin:8rpx 16rpx;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 .tags{
   display: flex;
   flex-direction: row;
-
 }
 .tag-item{
   padding:3rpx 48rpx;
@@ -21,9 +21,17 @@
 .btn{
   display: inline-block;
   left:0;
-  border:none;
-  outline: none;
+  border-bottom:1px solid #ddd;
+  border-bottom-left-radius:0 ;
+  border-bottom-right-radius:0 ;
+  background:transparent;
   font-size: inherit;
+  line-height: inherit;
   padding:3rpx 16rpx;
   margin:0;
+}
+.btn::after{ border: none; } 
+
+.selected{
+  background:#f60;
 }

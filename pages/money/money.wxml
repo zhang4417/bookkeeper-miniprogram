@@ -1,6 +1,7 @@
 
-<tag-list tags="{{tags}}" prop="haha" />
-
-<notes></notes>
-<number-pad></number-pad>
+<view class="wrapper">
+  <number-pad></number-pad>
+  <notes></notes>
+  <tag-list tags="{{tags}}" />
+</view>
 

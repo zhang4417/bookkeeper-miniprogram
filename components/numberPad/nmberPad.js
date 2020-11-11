@@ -1,5 +1,7 @@
 Component({
-  data:{},
+  data:{
+    output:0
+  },
   lifetimes:{},
   methods:{}
 })

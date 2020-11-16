@@ -8,10 +8,5 @@ create(store,{
     wx.navigateTo({
       url:`/pages/editTag/editTag?id=${id}`
     })
-  },
-  onload(){
-    wx.getSystemInfo({
-      success: (result) => {console.log(result)},
-    })
   }
 })

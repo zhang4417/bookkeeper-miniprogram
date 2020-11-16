@@ -14,7 +14,12 @@ create.Component(store,{
   pageLifetimes: {
     // 组件所在页面的生命周期函数
     show: function () { 
-      console.log('哈哈')
+      const listId=store.data.tags.map(item=>item.id)
+      if(listId.indexOf(this.data.selectedTag.id)<0){
+        this.setData({
+          selectedTag:store.data.tags[0]
+        })
+      }
     },
   },
   methods:{

@@ -27,6 +27,11 @@ create.Component(store,{
       const detail=e.target.dataset
       this.setData({selectedTag:detail.tag})
       this.triggerEvent("myEvent",this.data.selectedTag)
+    },
+    onAddTag(){
+      wx.navigateTo({
+        url: '/pages/newTag/newTag',
+      })
     }
   }
 })

@@ -9,6 +9,7 @@
 .tags{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .tag-item{
   padding:3rpx 48rpx;
@@ -16,6 +17,7 @@
   margin-bottom:16rpx;
   border-radius:32rpx;
   background-color:#eee;
+  white-space: nowrap;
 }
 
 .btn{

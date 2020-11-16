@@ -1,0 +1,10 @@
+<!--pages/newTag/newTag.wxml-->
+<view class="wrapper">
+  <label class="tag">
+    <text class="tag-span">标签</text>
+    <input type="text" class="tag-input" bindblur="onInputVal" placeholder="请在此输入标签名"/>
+  </label>
+  <view class="button-wrapper">
+    <button class="change" bindtap="onChangeTag">确认修改</button>
+  </view>
+</view>

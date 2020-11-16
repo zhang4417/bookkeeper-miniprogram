@@ -1,1 +1,26 @@
 /* pages/nav/tags/tags.wxss */
+.wrapper{
+  position:relative;
+}
+.tag-item{
+  margin:0 5px;
+  padding:8px 3px;
+  display:flex;
+  align-items: center;
+  justify-content: start;
+  border-bottom:1px solid #eee
+}
+.tag-item-img{
+  margin-left: auto;
+  width:36rpx;
+  height:36rpx;
+}
+.btn{
+  margin-top:64px;
+  background:#f60;
+  padding:0 8px;
+  display:inline-block;
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%)
+}

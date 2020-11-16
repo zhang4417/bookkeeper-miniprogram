@@ -1,32 +1,12 @@
-Component({
+import create from '../../utils/create'
+import store from '../../store/index'
+
+create.Component(store,{
+  use:['tags'],
   data:{
-    selectedTag:''
+    selectedTag:store.data.tags[0]
   },
-  properties:{
-    tags:{
-      type:Array,
-      value:[]
-    }
-  },
-  pageLifetimes: {
-    show: function() {
-      // 页面被展示
-    },
-    hide: function() {
-      // 页面被隐藏
-    },
-    resize: function(size) {
-      // 页面尺寸变化
-    }
-  },
-  created(){
-  },
-  attached:function(){
-    this.setData({selectedTag:this.properties.tags[0]})
-  },
-  ready(){ 
-  },
-  observers:{
+  attached(){
   },
   methods:{
     onSelected(e){

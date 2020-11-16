@@ -1,3 +1,13 @@
 <!--pages/nav/tags/tags.wxml-->
-<view>标签</view>
+<view class="wrapper">
+  <view class="tags">
+    <block wx:for="{{tags}}" wx:key="index" wx:for-item="item">
+      <view class="tag-item">
+        <cover-view class="tag-item-content">{{item}}</cover-view>
+        <cover-image src="/images/nav/right.png" class="tag-item-img" />
+      </view>
+    </block>
+  </view>
+  <button class="btn">新增标签</button>
+</view>
 

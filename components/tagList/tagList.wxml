@@ -1,7 +1,7 @@
 <!--components/tagList/tagList.wxml-->
 <view class="wrapper">
   <view class="tags">
-    <block wx:for="{{tags}}" wx:key="index" wx:for-item="item">
+    <block wx:for="{{$.tags}}" wx:key="index" wx:for-item="item">
       <view class="tag-item {{selectedTag===item?'selected':''}}" bind:tap="onSelected" data-tag="{{item}}">{{item}}</view>
     </block>
   </view>

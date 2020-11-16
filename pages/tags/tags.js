@@ -1,11 +1,6 @@
+import create from '../../utils/create.js'
+import store from '../../store/index.js'
 
-Page({
-  // onShow() {
-  //   if ((typeof this.getTabBar) === 'function' && this.getTabBar()) {
-  //       this.getTabBar().setData({
-  //         selected: 0
-  //       })
-
-  //   }
-  // }
+create(store,{
+  use:['tags']
 })

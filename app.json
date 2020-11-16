@@ -1,7 +1,8 @@
 {
   "pages":[
-    "pages/money/money",
     "pages/tags/tags", 
+    "pages/money/money",
+
     "pages/statistics/statistics"
   ],
   "tabBar":{

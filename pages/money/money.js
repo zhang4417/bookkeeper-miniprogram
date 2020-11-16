@@ -1,13 +1,9 @@
-Page({
-  data:{
-    tags:["衣","食","住","行"],
-    record:{notes:'',amount:0,tag:""}
-  },
-  methods:{
+import create from "../../utils/create";
+import store from "../../store/index";
 
-  },
-  onLoad(){
-    this.setData({record:{...this.data.record,tag:this.data.tags[0]}})
+create(store,{
+  data:{
+    record:{notes:'',amount:0,tag:""}
   },
   onGetNotes:function(e){
     this.setData({record:{...this.data.record,notes:e.detail}})

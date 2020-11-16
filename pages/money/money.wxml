@@ -2,6 +2,6 @@
 <view class="wrapper">
   <number-pad record="{{record}}"/>
   <notes bind:myEvent="onGetNotes" />
-  <tag-list tags="{{tags}}" bind:myEvent="onGetTag"/>
+  <tag-list bind:myEvent="onGetTag"/>
 </view>
 

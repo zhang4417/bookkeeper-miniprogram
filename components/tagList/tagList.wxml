@@ -2,7 +2,7 @@
 <view class="wrapper">
   <view class="tags">
     <block wx:for="{{$.tags}}" wx:key="index" wx:for-item="item">
-      <view class="tag-item {{selectedTag===item?'selected':''}}" bind:tap="onSelected" data-tag="{{item}}">{{item}}</view>
+      <view class="tag-item {{selectedTag.id===item.id?'selected':''}}" bind:tap="onSelected" data-tag="{{item}}">{{item.name}}</view>
     </block>
   </view>
   <view class="btn-wrapper">

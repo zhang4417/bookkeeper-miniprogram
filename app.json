@@ -2,8 +2,8 @@
   "pages":[
     "pages/tags/tags", 
     "pages/money/money",
-
-    "pages/statistics/statistics"
+    "pages/statistics/statistics",
+    "pages/editTag/editTag"
   ],
   "tabBar":{
     "color": "#7A7E83",

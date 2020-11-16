@@ -3,7 +3,7 @@ import store from "../../store/index";
 
 create(store,{
   data:{
-    record:{notes:'',amount:0,tag:""}
+    record:{notes:'',amount:0,tag:{}}
   },
   onGetNotes:function(e){
     this.setData({record:{...this.data.record,notes:e.detail}})

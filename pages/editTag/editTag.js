@@ -1,20 +1,31 @@
-// pages/editTag/editTag.js
-Page({
+import create from "../../utils/create"
+import store from "../../store/index"
 
-  /**
-   * 页面的初始数据
-   */
+create.Page(store,{
+  use:['tags'],
   data: {
-
+    tagName:"",
+    tagId:null,
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
-    console.log(options.id)
+    const id=Number.parseInt(options.id)
+    this.setData({tagId:id})
+    const filterTag=store.data.tags.filter(item=>item.id===id)
+    this.setData({tagName:filterTag[0].name})
   },
-
+  onInputVal(e){
+    const value=e.detail.value
+    this.setData({tagName:value})
+  },
+  onChangeTag(){
+    const tags=store.data.tags.map(item=>item.id===this.data.tagId?{...item,name:this.data.tagName}:item)
+    store.data.tags=tags
+  },
+  onDeleteTag(){
+    const tags=store.data.tags.filter(item=>item.id!==this.data.tagId)
+    console.log(tags)
+    store.data.tags=tags
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

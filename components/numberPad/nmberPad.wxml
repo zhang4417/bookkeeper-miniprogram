@@ -2,19 +2,19 @@
 <view class="numberPad">
     <view class="output">{{output}}</view>
     <view class="buttons" bindtap="onNumberPad">
-      <button data-text="1">1</button>
-      <button data-text="2">2</button>
-      <button data-text="3">3</button>
-      <button data-text="删除">删除</button>
-      <button data-text="4">4</button>
-      <button data-text="5">5</button>
-      <button data-text="6">6</button>
-      <button data-text="清空">清空</button>
-      <button data-text="7">7</button>
-      <button data-text="8">8</button>
-      <button data-text="9">9</button>
-      <button class="ok" data-text="OK">OK</button>
-      <button class="zero" data-text="0">0</button>
-      <button data-text=".">.</button>
+      <button class="btn" data-text="1">1</button>
+      <button class="btn" data-text="2">2</button>
+      <button class="btn" data-text="3">3</button>
+      <button class="btn" data-text="删除">删除</button>
+      <button class="btn" data-text="4">4</button>
+      <button class="btn" data-text="5">5</button>
+      <button class="btn" data-text="6">6</button>
+      <button class="btn" data-text="清空">清空</button>
+      <button class="btn" data-text="7">7</button>
+      <button class="btn" data-text="8">8</button>
+      <button class="btn" data-text="9">9</button>
+      <button class="ok btn" data-text="OK">OK</button>
+      <button class="zero btn" data-text="0">0</button>
+      <button class="btn" data-text=".">.</button>
     </view>
   </view>

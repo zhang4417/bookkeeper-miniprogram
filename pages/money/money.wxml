@@ -1,4 +1,3 @@
-
 <view class="wrapper">
   <number-pad record="{{record}}"/>
   <notes bind:myEvent="onGetNotes" />

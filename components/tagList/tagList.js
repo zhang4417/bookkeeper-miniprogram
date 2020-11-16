@@ -6,7 +6,16 @@ create.Component(store,{
   data:{
     selectedTag:store.data.tags[0]
   },
-  attached(){
+  lifetimes:{
+    attached(){
+      console.log('attached')
+    }
+  },
+  pageLifetimes: {
+    // 组件所在页面的生命周期函数
+    show: function () { 
+      console.log('哈哈')
+    },
   },
   methods:{
     onSelected(e){

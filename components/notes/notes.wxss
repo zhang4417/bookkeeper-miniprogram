@@ -8,16 +8,16 @@
   align-items: center;
   border-radius:8rpx;
 }
-.note>text{
+.note-text{
   padding:3rpx 8rpx;
   color:#ccc;
   line-height: 100%;
 }
-.note>view{
+.note-line{
   border-right:1px solid #ddd;
   height:16px;
   margin-right:8rpx;
 }
-.note>input{
+.note-input{
   height:72rpx;
 }

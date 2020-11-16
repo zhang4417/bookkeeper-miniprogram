@@ -1,1 +1,31 @@
 /* pages/editTag/editTag.wxss */
+
+
+.tag{
+  display:flex;
+  align-items: center;
+  margin:72px 8px;
+  background:#eee;
+  height:54px;
+}
+.tag-span{
+  white-space: nowrap;
+  color:#bbb;
+  padding:3px;
+}
+.tag-input{
+  width:100%;
+  line-height: 100%;
+}
+
+.button-wrapper{
+  display:flex;
+}
+.delete{
+  background: #eee;
+
+}
+.change{
+  background:#f60;
+  color:white;
+}

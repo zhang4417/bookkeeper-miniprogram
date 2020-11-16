@@ -1,2 +1,11 @@
 <!--pages/editTag/editTag.wxml-->
-<text>编辑标签</text>
+<view class="wrapper">
+  <label class="tag">
+    <text class="tag-span">标签</text>
+    <input type="text" value="{{tagName}}" class="tag-input" bindblur="onInputVal"/>
+  </label>
+  <view class="button-wrapper">
+    <button class="delete" bindtap="onDeleteTag">删除标签</button>
+    <button class="change" bindtap="onChangeTag">确认修改</button>
+  </view>
+</view>

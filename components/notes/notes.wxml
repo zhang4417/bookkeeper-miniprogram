@@ -1,7 +1,8 @@
 <!--components/notes/notes.wxml-->
 <view class="wrapper">
-  <label class="note"><text>备注</text>
-    <view></view>
-    <input type="text" placeholder="请在此输入备注。" bind:change="onNoteChange"/>
+  <label class="note">
+    <text class="note-text">备注</text>
+    <view class="note-line"></view>
+    <input class="note-input" type="text" placeholder="请在此输入备注。" bind:change="onNoteChange"/>
   </label>
 </view>

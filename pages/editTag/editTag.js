@@ -19,15 +19,14 @@ create.Page(store,{
   },
   onChangeTag(){
     const tags=store.data.tags.map(item=>item.id===this.data.tagId?{...item,name:this.data.tagName}:item)
-    store.data.tags=tags
+    store.saveTags(tags)
     wx.navigateBack({
       delta: 0,
     })
   },
   onDeleteTag(){
     const tags=store.data.tags.filter(item=>item.id!==this.data.tagId)
-    console.log(tags)
-    store.data.tags=tags
+    store.saveTags(tags)
     wx.navigateBack({
       delta: 0,
     })

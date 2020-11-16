@@ -13,12 +13,10 @@ create.Page(store,{
     const value=e.detail.value
     this.setData({tag:value})
   },
-  onChangeTag(){
-    const id=wx.getStorageSync('_tagId')
-    const newId=store.idCreator(id)
-    wx.setStorageSync('_tagId',newId)
-    const tags=store.data.tags
-    store.data.tags=[...tags,{name:this.data.tag,id:newId}]
+  onAddTag(){
+    const id=store.idCreator()
+    const tags=[...store.data.tags,{name:this.data.tag,id:id}]
+    store.saveTags(tags)
     wx.navigateBack({
       delta: 0,
     })

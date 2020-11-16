@@ -5,7 +5,18 @@ export default {
   //无脑全部更新，组件或页面不需要声明 use
   //updateAll: true,
   debug: true,
-  idCreator(id){
-    return id++
+  idCreator(){
+    let id=wx.getStorageSync('_tagId') || 11
+    id+=1
+    wx.setStorageSync('_tagId',id)
+    return id
+  },
+  fetchTags(){
+    const tags=wx.getStorageSync('_tags') || this.data.tags
+    this.data.tags=tags
+  },
+  saveTags(tags){
+    wx.setStorageSync('_tags',tags)
+    this.data.tags=tags
   }
 }

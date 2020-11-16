@@ -1,7 +1,7 @@
 <!--pages/nav/tags/tags.wxml-->
 <view class="wrapper">
   <view class="tags">
-    <block wx:for="{{tags}}" wx:key="index" wx:for-item="item">
+    <block wx:for="{{$.tags}}" wx:key="index" wx:for-item="item">
       <view class="tag-item" bindtap="onToEdit" data-id="{{item.id}}">
         <cover-view class="tag-item-content">{{item.name}}</cover-view>
         <cover-image src="/images/nav/right.png" class="tag-item-img" />

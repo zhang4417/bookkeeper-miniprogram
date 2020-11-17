@@ -8,13 +8,16 @@ create.Page(store,{
   },
   onLoad(){
     store.fetchTags()
-    // const tags=wx.getStorageSync('_tags') || store.data.tags
-    // this.setData({tagList:tags})
   },
   onToEdit(e){
     const id=e.target.dataset.id
     wx.navigateTo({
       url:`/pages/editTag/editTag?id=${id}`
+    })
+  },
+  onAddTag(){
+    wx.navigateTo({
+      url: '/pages/newTag/newTag',
     })
   }
 })

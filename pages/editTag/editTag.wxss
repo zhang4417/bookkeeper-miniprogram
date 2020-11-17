@@ -23,7 +23,6 @@
 }
 .delete{
   background: #eee;
-
 }
 .change{
   background:#f60;

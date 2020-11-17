@@ -17,8 +17,10 @@
   content:"";
   display:block;
 }
-.btn{
+.buttons>.btn{
+  padding:0px;
   height:46px;
+  line-height: 46px;
   width:25%;
   float:left;
 }

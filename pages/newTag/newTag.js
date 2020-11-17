@@ -20,5 +20,8 @@ create.Page(store,{
     wx.navigateBack({
       delta: 0,
     })
+  },
+  onXXX(e){
+    console.log(e.detail.value)
   }
 })

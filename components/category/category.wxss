@@ -1,0 +1,19 @@
+.wrapper{
+  display: flex;
+  justify-content: center;
+  margin:5px;
+}
+.item{
+  padding:3px;
+  margin-right:4px;
+  margin-left:4px;
+  position:relative;
+}
+.selected::after{
+  position:absolute;
+  width:100%;
+  content:'';
+  bottom:0;
+  left:0;
+  border-bottom:3px solid #f60;
+}

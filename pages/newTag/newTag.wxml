@@ -2,7 +2,7 @@
 <view class="wrapper">
   <label class="tag">
     <text class="tag-span">标签</text>
-    <input type="text" class="tag-input" bindblur="onInputVal" placeholder="请在此输入标签名"/>
+    <input type="text" class="tag-input" bindinput="onInputVal" placeholder="请在此输入标签名" maxlength="4"/>
   </label>
   <view class="button-wrapper">
     <button class="add" bindtap="onAddTag">确认添加</button>

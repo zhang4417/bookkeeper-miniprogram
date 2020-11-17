@@ -1,6 +1,7 @@
 <view class="wrapper">
-  <number-pad record="{{record}}"/>
-  <notes bind:myEvent="onGetNotes" />
+  <category propCategory="{{record.category}}" bind:myEvent="onGetCategory"/>
   <tag-list bind:myEvent="onGetTag"/>
+  <notes bind:myEvent="onGetNotes" />
+  <number-pad record="{{record}}"/>
 </view>
 

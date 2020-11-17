@@ -1,10 +1,13 @@
 /* components/tagList/tagList.wxss */
 
+:host {  
+  display: contents;
+}
 .wrapper{
+  flex-grow:1;
   margin:8rpx 16rpx;
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  flex-direction: column-reverse;
 }
 .tags{
   display: flex;

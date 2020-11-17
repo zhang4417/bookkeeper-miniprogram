@@ -1,12 +1,12 @@
 /* components/numberPad/nmberPad.wxss */
 
 .output{
-  height:92rpx;
+  height:100rpx;
   background:#f60;
-  font-size:48rpx;
+  font-size:50rpx;
   color:white;
-  box-shadow:0 3px 3px rgba(252, 139, 63, 0.5);
-  margin:8rpx 16rpx;
+  box-shadow:0 3px 3px rgba(158, 157, 157, 0.5);
+  margin:16rpx;
   border-radius:8rpx;
   line-height:92rpx;
   text-align:right;
@@ -19,15 +19,16 @@
 }
 .buttons>.btn{
   padding:0px;
-  height:46px;
-  line-height: 46px;
+  height:92rpx;
+  line-height: 92rpx;
+  border:1px solid #ddd;
   width:25%;
   float:left;
 }
 .btn.ok{
   float:right;
-  height:92px;
-  line-height:92px;
+  height:184rpx;
+  line-height:184rpx;
 }
 .btn.zero{
   width:50%;

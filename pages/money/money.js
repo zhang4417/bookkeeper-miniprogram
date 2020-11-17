@@ -3,7 +3,7 @@ import store from "../../store/index";
 
 create.Page(store,{
   data:{
-    record:{notes:'',amount:0,tag:{}}
+    record:{category:'-',notes:'',amount:0,tag:{}}
   },
   onLoad(){
     this.setData({record:{...this.data.record,tag:store.data.tags[0]}})
@@ -24,6 +24,10 @@ create.Page(store,{
   },
   onGetTag:function(e){
     this.setData({record:{...this.data.record,tag:e.detail}})
+    console.log(this.data.record)
+  },
+  onGetCategory:function(e){
+    this.setData({record:{...this.data.record,category:e.detail}})
     console.log(this.data.record)
   }
 })

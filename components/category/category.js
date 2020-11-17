@@ -1,0 +1,28 @@
+Component({
+  properties:{
+    propCategory:{
+      type:String,
+      value:'-'
+    }
+  },
+  data:{
+    category:[{name:"支出",type:'-'},{name:"收入",type:'+'}],
+    selected:'',
+  },
+  lifetimes:{
+    attached(){
+      this.setData({
+        selected:this.properties.propCategory
+      })
+    }
+  },
+  methods:{
+    onChangeType(e){
+      const selectedCategory=e.target.dataset.category
+      this.setData({
+        selected:selectedCategory
+      })
+      this.triggerEvent('myEvent',this.data.selected)
+    }
+  }
+})

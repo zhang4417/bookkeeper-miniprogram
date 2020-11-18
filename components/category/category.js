@@ -1,4 +1,5 @@
 Component({
+  externalClasses:['my-class'],
   properties:{
     propCategory:{
       type:String,

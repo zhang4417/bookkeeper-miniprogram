@@ -1,4 +1,7 @@
-Component({
+const { default: store } = require("../../store/index")
+import create from "../../utils/create"
+
+create.Component(store,{
   data:{
     output:"0"
   },
@@ -31,8 +34,13 @@ Component({
         this.setData({output:"0"})
       }
       if(text==="OK"){
+        const nowDate=new Date()
+        console.log(nowDate)
+        const hour = nowDate.getHours()
+        const minute = nowDate.getMinutes()
+        const second = nowDate.getSeconds()
         const x=Number.parseFloat(output)
-        console.log({...this.properties.record,amount:x})
+        store.saveRecords({...this.properties.record,amount:x,createAt:`${hour}:${minute}:${second}`,id:Math.random()})
       }
     }
   }

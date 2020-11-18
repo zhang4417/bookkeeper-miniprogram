@@ -5,9 +5,6 @@ const nowDate=new Date()
 const year = nowDate.getFullYear()
 const month = nowDate.getMonth()+1
 const day = nowDate.getDate()
-const hour = nowDate.getHours()
-const minute = nowDate.getMinutes()
-const second = nowDate.getSeconds()
 
 create.Page(store,{
   data:{

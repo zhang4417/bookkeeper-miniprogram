@@ -1,8 +1,9 @@
 {
   "pages":[
+    "pages/statistics/statistics",
     "pages/money/money",
     "pages/tags/tags", 
-    "pages/statistics/statistics",
+
     "pages/editTag/editTag",
     "pages/newTag/newTag"
   ],

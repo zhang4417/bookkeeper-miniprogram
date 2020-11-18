@@ -27,7 +27,8 @@
 }
 .btn-wrapper .btn{
   display: inline-block;
-  padding:0px;
+  padding-left:0px !important;
+  padding-right:0px !important;
   width:25%;
   margin:0;
   border-bottom:1px solid #ddd;

@@ -1,3 +1,13 @@
 <!--pages/nav/statistics/statistics.wxml-->
-<view>统计</view>
+
+<view class="wrapper">
+  <category propCategory="-" bind:myEvent="onGetCategory" myClass='my-class'/>
+  <view>
+    <block wx:for="{{$.records}}" wx:key="index" wx:for-item="item">
+      <view class="records-item">
+        <text class="item-tag">{{item.tag.name}}</text><text class="item-notes">{{item.notes}}</text><text class="item-amount">{{item.amount}}¥</text>
+      </view>
+    </block>
+  </view>
+</view>
 

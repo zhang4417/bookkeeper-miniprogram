@@ -22,7 +22,9 @@
   background-color:#eee;
   white-space: nowrap;
 }
-
+.btn-wrapper{
+  margin:8px 0;
+}
 .btn-wrapper .btn{
   display: inline-block;
   padding:0px;

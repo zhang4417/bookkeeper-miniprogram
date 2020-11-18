@@ -1,0 +1,12 @@
+<!--pages/date/date.wxml-->
+<view class="wrapper">
+  <label class="note">
+    <text class="note-text">日期</text>
+    <view class="note-line"></view>
+    <picker mode="date" value="{{date}}" start="{{start}}" end="{{end}}" class="picker-wrapper" bindchange="onDateChange">
+      <view class="picker">
+        {{date}}
+      </view>
+    </picker>
+  </label>
+</view>

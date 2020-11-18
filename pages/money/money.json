@@ -3,7 +3,8 @@
     "tag-list":"/components/tagList/tagList",
     "notes":"/components/notes/notes",
     "number-pad":"/components/numberPad/nmberPad",
-    "category":"/components/category/category"
+    "category":"/components/category/category",
+    "date":"/components/date/date"
 
   }
 }

@@ -1,13 +1,17 @@
 <!--pages/nav/statistics/statistics.wxml-->
-
 <view class="wrapper">
-  <category propCategory="-" bind:myEvent="onGetCategory" myClass='my-class'/>
-  <view>
-    <block wx:for="{{$.records}}" wx:key="index" wx:for-item="item">
-      <view class="records-item">
-        <text class="item-tag">{{item.tag.name}}</text><text class="item-notes">{{item.notes}}</text><text class="item-amount">{{item.amount}}¥</text>
+  <category propCategory="{{category}}" bind:myEvent="onGetCategory" myClass='my-class'/>
+  <block wx:for="{{recordList}}" wx:key="index" wx:for-item="item">
+    <view>
+      <view class="title">
+        {{item[0]}}
       </view>
-    </block>
-  </view>
+      <block wx:for="{{item[1]}}" wx:key="index" wx:for-item="record">
+        <view class="records-item">
+          <text class="item-tag">{{record.tag.name}}</text><text class="item-notes">{{record.notes}}</text><text class="item-amount">{{record.amount}}¥</text>
+        </view>
+      </block>
+    </view>
+  </block>
 </view>
 

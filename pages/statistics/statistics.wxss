@@ -32,3 +32,13 @@
   margin-right:0 !important;
   padding:0;
 }
+.title{
+  background:#f60;
+  color:white;
+  border-top-left-radius: 8rpx;
+  border-top-right-radius: 8rpx;
+} 
+.records-item:nth-child(2){
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

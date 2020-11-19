@@ -34,7 +34,6 @@ create.Page(store,{
         let ft2 = d.setHours(timeB[0], timeB[1], timeB[2])
         if(ft1-ft2>0){return -1}
       })
-      console.log(sortItem.map(i=>i.createAt))
       return [item[0],sortItem]
     })
     this.setData({recordList:sortEntryObj})

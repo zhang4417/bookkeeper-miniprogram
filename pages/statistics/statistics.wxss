@@ -25,16 +25,23 @@
 .item-amount{
   margin-left:auto
 }
-.my-class{
+.category-wrapper{
+  margin:0 !important;
+}
+.category-item{
   width:50%;
+  background:#eee;
+  height:75rpx;
+  line-height:75rpx;
   text-align: center;
   margin-left:0 !important;
   margin-right:0 !important;
   padding:0;
 }
-.title{
+.records-title{
   background:#f60;
   color:white;
+  padding:0 8px;
   border-top-left-radius: 8rpx;
   border-top-right-radius: 8rpx;
 } 

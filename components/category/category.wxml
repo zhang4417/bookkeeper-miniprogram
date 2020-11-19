@@ -1,5 +1,5 @@
-<view class="wrapper">
+<view class="wrapper category-wrapper">
   <block wx:for="{{category}}" wx:key="index"  wx:for-item="item">
-    <view class="item my-class {{item.type===selected?'selected':''}}" data-category="{{item.type}}" bindtap="onChangeType">{{item.name}}</view>    
+    <view class="item category-item {{item.type===selected?'selected':''}}" data-category="{{item.type}}" bindtap="onChangeType">{{item.name}}</view>    
   </block>
 </view>

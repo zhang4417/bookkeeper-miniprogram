@@ -3,8 +3,13 @@
   <view class="btn-wrapper">
     <button class="btn" bindtap="onAddTag">新增标签</button>
   </view>
-  <view class="tags">
-    <block wx:for="{{$.tags}}" wx:key="index" wx:for-item="item">
+  <view class="tags" wx:if="{{category==='-'}}">
+    <block wx:for="{{outcomeTags}}" wx:key="index" wx:for-item="item">
+      <view class="tag-item {{selectedTag.id===item.id?'selected':''}}" bind:tap="onSelected" data-tag="{{item}}">{{item.name}}</view>
+    </block>
+  </view>
+  <view class="tags" wx:else>
+    <block wx:for="{{incomeTags}}" wx:key="index" wx:for-item="item">
       <view class="tag-item {{selectedTag.id===item.id?'selected':''}}" bind:tap="onSelected" data-tag="{{item}}">{{item.name}}</view>
     </block>
   </view>

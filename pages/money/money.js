@@ -7,36 +7,45 @@ const month = nowDate.getMonth()+1
 const day = nowDate.getDate()
 
 create.Page(store,{
+  use:['tags'],
   data:{
     record:{category:'-',notes:'',date:`${year}-${month}-${day}`,amount:0,tag:{}}
   },
   onLoad(){
-    this.setData({record:{...this.data.record,tag:store.data.tags[0]}})
+    this._switchTags(this.data.record.category)
   },
   onShow(){
-    const listId=store.data.tags.map(item=>item.id)
-      if(listId.indexOf(this.data.record.tag.id)<0){
-        this.setData({record:{...this.data.record,tag:store.data.tags[0]}})
-      }
+    // const listId=store.data.tags.map(item=>item.id)
+    // if(listId.indexOf(this.data.record.tag.id)<0){
+    //   this._switchTags(this.data.record.category)
+    // }
   },
   onGetNotes:function(e){
     this.setData({record:{...this.data.record,notes:e.detail}})
-    console.log(this.data.record)
   },
   onGetOutput:function(e){
     this.setData({record:{...this.data.record,amount:e.detail}})
-    console.log(this.data.record)
   },
   onGetTag:function(e){
     this.setData({record:{...this.data.record,tag:e.detail}})
-    console.log(this.data.record)
   },
   onGetCategory:function(e){
     this.setData({record:{...this.data.record,category:e.detail}})
-    console.log(this.data.record)
   },
   onGetDate:function(e){
     this.setData({record:{...this.data.record,date:e.detail}})
-    console.log(this.data.record)
+  },
+  _switchTags(category){
+    const filterTags=store.data.tags.filter(item=>item.type===category)
+    console.log(filterTags)
+    if(filterTags.length===0){
+      this.setData({
+        record:{...this.data.record,tag:{name:"其他"}}
+      })
+    }else{
+      this.setData({
+        record:{...this.data.record,tag:filterTags[0]}
+      })
+    }
   }
 })

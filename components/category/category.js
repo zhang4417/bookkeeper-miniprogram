@@ -1,5 +1,5 @@
 Component({
-  externalClasses:['my-class'],
+  externalClasses:['category-item','category-wrapper'],
   properties:{
     propCategory:{
       type:String,

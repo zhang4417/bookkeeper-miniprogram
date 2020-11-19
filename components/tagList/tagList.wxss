@@ -23,7 +23,7 @@
   white-space: nowrap;
 }
 .btn-wrapper{
-  margin:8px 0;
+  margin:5px 0;
 }
 .btn-wrapper .btn{
   display: inline-block;
@@ -36,7 +36,7 @@
   background:transparent;
   font-size: inherit;
   color:#ccc;
-  line-height: inherit;
+  line-height: 1.2;
 }
 .btn::after{ border: none; } 
 

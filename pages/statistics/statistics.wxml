@@ -1,9 +1,9 @@
 <!--pages/nav/statistics/statistics.wxml-->
+<category propCategory="{{category}}" bind:myEvent="onGetCategory" categoryWrapper='category-wrapper' categoryItem='category-item'/>
 <view class="wrapper">
-  <category propCategory="{{category}}" bind:myEvent="onGetCategory" myClass='my-class'/>
   <block wx:for="{{recordList}}" wx:key="index" wx:for-item="item">
-    <view>
-      <view class="title">
+    <view class="records">
+      <view class="records-title">
         {{item[0]}}
       </view>
       <block wx:for="{{item[1]}}" wx:key="index" wx:for-item="record">

@@ -12,9 +12,11 @@ create.Page(store,{
   },
   onInputVal(e){
     const value=e.detail.value
-    this.setData({tag:value})
+    const rexVal=value.replace(/\s/g,'')
+    this.setData({tag:rexVal})
   },
   onAddTag(){
+    if(this.data.tag==='')return;
     const id=store.idCreator()
     const tags=[...store.data.tags,{name:this.data.tag,id:id,type:this.data.category}]
     store.saveTags(tags)

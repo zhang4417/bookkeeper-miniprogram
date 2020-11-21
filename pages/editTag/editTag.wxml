@@ -2,7 +2,7 @@
 <view class="wrapper">
   <label class="tag">
     <text class="tag-span">标签</text>
-    <input type="text" value="{{tagName}}" class="tag-input" bindinput="onInputVal" maxlength="4"/>
+    <input type="text" value="{{tagName}}" class="tag-input" bindinput="onInputVal" maxlength="4" placeholder="标签名至少包含1-4个字符"/>
   </label>
   <view class="button-wrapper">
     <button class="delete" bindtap="onDeleteTag">删除标签</button>

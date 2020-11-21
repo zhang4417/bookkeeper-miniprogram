@@ -40,6 +40,7 @@ create.Component(store,{
         const second = nowDate.getSeconds()
         const x=Number.parseFloat(output)
         store.saveRecords({...this.properties.record,amount:x,createAt:`${hour}:${minute}:${second}`,id:Math.random()})
+        this.setData({output:"0"})
       }
     }
   }

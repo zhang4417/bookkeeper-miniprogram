@@ -15,9 +15,11 @@ create.Page(store,{
   },
   onInputVal(e){
     const value=e.detail.value
-    this.setData({tagName:value})
+    const rexVal=value.replace(/\s/g,'')
+    this.setData({tagName:rexVal})
   },
   onChangeTag(){
+    if(this.data.tagName==='')return;
     const tags=store.data.tags.map(item=>item.id===this.data.tagId?{...item,name:this.data.tagName}:item)
     store.saveTags(tags)
     wx.navigateBack({

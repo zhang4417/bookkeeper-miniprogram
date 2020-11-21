@@ -54,7 +54,7 @@ create.Page(store,{
     this._filterRecord(store.data.records)
   },
   onSelectRecord(e){
-    const targetId=e.target.dataset.id
+    const targetId=e.currentTarget.dataset.id
     if(this.data.activeId===targetId){
       this.setData({
         activeId:targetId,

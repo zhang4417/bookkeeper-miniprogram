@@ -2,9 +2,8 @@
 .wrapper{
   position:relative;
 }
-
 .tag-item{
-  margin:0 5px;
+  margin:0 5px 5px 5px;
   padding:8px 3px;
   display:flex;
   align-items: center;
@@ -15,15 +14,4 @@
   margin-left: auto;
   width:36rpx;
   height:36rpx;
-}
-.btn-wrapper{
-  display:flex;
-}
-.btn-wrapper .btn{
-  margin-bottom:64px;
-  margin-top:64px;
-  background:#f60;
-  color:white;
-  padding-left:8px;
-  padding-right:8px;
 }

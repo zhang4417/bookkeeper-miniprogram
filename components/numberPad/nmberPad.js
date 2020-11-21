@@ -35,7 +35,6 @@ create.Component(store,{
       }
       if(text==="OK"){
         const nowDate=new Date()
-        console.log(nowDate)
         const hour = nowDate.getHours()
         const minute = nowDate.getMinutes()
         const second = nowDate.getSeconds()

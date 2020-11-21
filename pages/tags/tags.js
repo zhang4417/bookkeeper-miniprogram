@@ -14,10 +14,5 @@ create.Page(store,{
     wx.navigateTo({
       url:`/pages/editTag/editTag?id=${id}`
     })
-  },
-  onAddTag(){
-    wx.navigateTo({
-      url: '/pages/newTag/newTag',
-    })
   }
 })

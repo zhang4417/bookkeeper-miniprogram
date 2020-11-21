@@ -6,11 +6,12 @@
   display:flex;
   justify-content: flex-start;
   background:#eee;
-  height:75rpx;
-  line-height:75rpx;
+  height:100rpx;
+  line-height:100rpx;
   margin-bottom:10rpx;
   padding:0 8px;
   border-radius:8rpx;
+  position:relative;
 }
 .item-tag{
   white-space: nowrap;
@@ -48,4 +49,20 @@
 .records-item:nth-child(2){
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+.x{
+  font-size:16px;
+  color:#f60;
+  line-height:16px;
+  position:absolute;
+  top:0;
+  right:3px; 
+  line-height:1;
+  padding:0 3px;
+  border-radius:8rpx;
+  display:none;
+  box-shadow:0 3px 3px rgba(177,177,177,.5) ;
+}
+.active{
+  display:block;
 }

@@ -7,8 +7,8 @@
         {{item[0]}}
       </view>
       <block wx:for="{{item[1]}}" wx:key="index" wx:for-item="record">
-        <view class="records-item">
-          <text class="item-tag">{{record.tag.name}}</text><text class="item-notes">{{record.notes}}</text><text class="item-amount">{{record.amount}}¥</text>
+        <view class="records-item" data-id="{{record.id}}" bindtap="onSelectRecord">
+          <text class="item-tag">{{record.tag.name}}</text><text class="item-notes">{{record.notes}}</text><text class="item-amount">¥{{record.amount}}</text><text class="x {{activeId===record.id && toggle?'active':''}}" catchtap="onDeleteRecord">x</text>
         </view>
       </block>
     </view>

@@ -5,7 +5,9 @@ create.Page(store,{
   use:['records'],
   data:{
     recordList:[],
-    category:'-'
+    category:'-',
+    activeId:null,
+    toggle:false
   },
   _filterRecord(records){
     const filterRecords=records.filter(item=>item.category===this.data.category).sort(
@@ -50,5 +52,26 @@ create.Page(store,{
       category:e.detail
     })
     this._filterRecord(store.data.records)
+  },
+  onSelectRecord(e){
+    const targetId=e.target.dataset.id
+    if(this.data.activeId===targetId){
+      this.setData({
+        activeId:targetId,
+        toggle:!this.data.toggle
+      })
+    }else{
+      this.setData({
+        activeId:targetId,
+        toggle:true
+      })
+    }
+  },
+  onDeleteRecord(){
+    store.deleteRecord(this.data.activeId)
+    this._filterRecord(store.data.records)
+    this.setData({
+      toggle:false
+    })
   }
 })

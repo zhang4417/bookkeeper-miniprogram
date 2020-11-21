@@ -21,11 +21,6 @@ Component({
         start:year-20+'-01-01',
         end:date.replace(monthAndDay,'-12-31')
       })
-      console.log(this.data.start)
-      console.log(this.data.end)
-    },
-    ready(){
-
     }
   },
   methods:{

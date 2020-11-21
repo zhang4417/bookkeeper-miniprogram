@@ -7,7 +7,7 @@ export default {
   //updateAll: true,
   debug: true,
   idCreator(){
-    let id=wx.getStorageSync('_tagId') || 11
+    let id=wx.getStorageSync('_tagId') || this.data.tags.length+1
     id+=1
     wx.removeStorageSync('_tagId')
     wx.setStorageSync('_tagId',id)
@@ -36,4 +36,11 @@ export default {
     wx.setStorageSync('_records',records)
     this.data.records=records
   },
+  deleteRecord(id){
+    const records=this.cloneData(this.data.records)
+    const newRecords=records.filter(item=>item.id!==id)
+    wx.removeStorageSync('_records')
+    wx.setStorageSync('_records',newRecords)
+    this.data.records=newRecords
+  }
 }

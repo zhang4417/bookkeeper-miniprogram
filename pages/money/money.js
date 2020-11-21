@@ -37,7 +37,6 @@ create.Page(store,{
   },
   _switchTags(category){
     const filterTags=store.data.tags.filter(item=>item.type===category)
-    console.log(filterTags)
     if(filterTags.length===0){
       this.setData({
         record:{...this.data.record,tag:{name:"其他"}}
